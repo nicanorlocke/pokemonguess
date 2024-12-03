@@ -1,0 +1,67 @@
+@font-face {
+    font-family: pokeFont;
+    src: url('/fonts/Ketchum.otf');
+}
+
+#splash {
+    width: 700px;
+    height: 400px;
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px;
+    z-index: 1;
+    animation: reveal 0.5s;
+}
+
+button{
+    background-color: #2a75bb;
+    color: #ffcb05;
+    font-weight: bold;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid white;
+   display: block;
+   transition: 0.5s;
+   font-size: 20px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: #ffcb05;
+    color:#2a75bb;
+
+}
+
+#eleccion {
+    display: flex;
+    width: 600px;
+    margin: auto;
+    margin-bottom: 100px;
+   padding-top: 100px;
+   justify-content: space-around;
+}
+
+.diff{
+    font-family: pokeFont;
+    font-size: 30px;
+    opacity: 0.3;
+    transition: 0.5s;
+}
+.diff:hover{
+    cursor: pointer;
+    opacity: 1;
+    transform: scale(1.5);
+}
+.character{
+    width: 50px;
+}
+@keyframes reveal {
+from{opacity: 0;
+transform: translateX(200px);}
+to{
+    opacity:1;
+    transform: translateX(0px);
+}
+    
+}
+
