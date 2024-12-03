@@ -1,0 +1,28 @@
+#splash {
+    width: 700px;
+    height: 400px;
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;  
+    animation: reveal 0.5s;
+}
+
+@keyframes reveal {
+    from{opacity: 0;
+    transform: translateX(200px);}
+    to{
+        opacity:1;
+        transform: translateX(0px);
+    }
+        
+    }
+
+    img{
+        
+        width: 200px;
+        margin: auto;
+        border: 10px solid black;
+    }

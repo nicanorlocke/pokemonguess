@@ -10,6 +10,7 @@ import { CentralserviceService } from '../centralservice.service';
   styleUrl: './difficulty.component.css'
 })
 export class DifficultyComponent {
+
     isVisible:boolean=false;
 
     constructor (private central:CentralserviceService){
@@ -27,5 +28,11 @@ export class DifficultyComponent {
       this.central.welcomeVision(true);
       this.isVisible=false;
     }
+
+    startGame() {
+      this.central.gameVision(true);
+      this.isVisible=false;
+    }
+
 
 }
