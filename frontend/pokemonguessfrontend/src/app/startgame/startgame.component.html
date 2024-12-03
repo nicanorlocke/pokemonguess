@@ -1,5 +1,9 @@
 <div id="splash" *ngIf="isVisible" >
 
-<img [src]="pokegif" alt="">
+<img id="pokeimg" [src]="pokegif" alt="" *ngIf="guessVisible" >
+<h1 id="cronometro">{{contador}}</h1>
+<input id="respuesta" type="text" name="" id="" [(ngModel)]="userguess" *ngIf="inputVisible">
+
+<img id="boton" src="https://cdn-icons-png.flaticon.com/512/2094/2094510.png" alt="" (click)="cambiarPoke()">
 
 </div>

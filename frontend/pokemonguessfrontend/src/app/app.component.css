@@ -1,3 +1,7 @@
+@font-face {
+    font-family: pokeFont;
+    src: url('/fonts/Ketchum.otf');
+}
 #fondo {
     background-color: #3c5aa6;
     width: 100%;
@@ -7,4 +11,14 @@
     display: flex;
     justify-content: center; /* Centers horizontally */
     align-items: center;  
+}
+#mensaje {
+    font-family: pokeFont;
+    font-weight: bold;
+    font-size: 40px;
+    color:#ffcb05;
+    position: absolute;
+    top:100px;
+    margin: auto;
+    padding-bottom: 100px;
 }
